@@ -1,0 +1,62 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .linechart, .barchart, .doughtnutchart{
+    flex: 1;
+    height: 500px !important;
+    width: 500px !important;
+  }
+
+  
+
+  /* .barchart{
+    flex: 1;
+    height: 500px !important;
+    width: 500px !important;
+
+  } */
+  
+  /* Style the custom checkbox container */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer; /* Add cursor style to indicate clickable element */
+  }
+  
+  /* Style the actual checkbox */
+  .checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0; /* Hide the actual checkbox */
+    cursor: pointer; /* Add cursor style to indicate clickable element */
+  }
+  
+  /* Style the custom checkmark */
+  .checkbox-label input[type="checkbox"] + span::before {
+    content: "\2714"; /* Unicode checkmark character */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+  }
+  
+  /* Style the checkmark when checkbox is checked */
+  .checkbox-label input[type="checkbox"]:checked + span::before {
+    background-color: #007bff; /* Change to desired checkmark color */
+    color: white; /* Change to desired checkmark color */
+    border-color: #007bff; /* Change to desired checkmark color */
+  }
+  
