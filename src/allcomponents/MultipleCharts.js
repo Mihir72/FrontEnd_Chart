@@ -15,7 +15,7 @@ export default function Chart() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/getdata');
+      const response = await fetch('https://chart-backend.vercel.app/getdata');
       const jsonData = await response.json();
       setData(jsonData);
     } catch (error) {
