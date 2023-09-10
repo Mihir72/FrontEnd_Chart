@@ -28,7 +28,7 @@ export default function Chart() {
   }
   else
   return (
-    <div style={{textAlign: 'center',justifyContent: 'center',alignItems: 'center',}}>
+    <div>
       <Chart1 JsonData={data} />
 
       <Chart2 JsonData={data}/>
